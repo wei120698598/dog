@@ -2,17 +2,30 @@
 
 <!--- Replace <OWNER> with your Github Username and <REPOSITORY> with the name of your repository. -->
 <!--- You can find both of these in the url bar when you open your repository in github. -->
-![Workflow result](https://github.com/<OWNER>/<REPOSITORY>/workflows/Check/badge.svg)
+![Workflow result](https://github.com/wei120698598/dog/workflows/Check/badge.svg)
 
 
 ## :scroll: Description
 <!--- Describe your app in one or two sentences -->
+
+Display your dogs, and you can check dog detail info of one.
 
 
 ## :bulb: Motivation and Context
 <!--- Optionally point readers to interesting parts of your submission. -->
 <!--- What are you especially proud of? -->
 
+Just describe my UI, and Compose takes care of the rest. As app state changes, my UI automatically updates.
+Example:
+```kotlin
+@Preview("Light Theme", widthDp = 720, heightDp = 1280)
+@Composable
+fun LightPreview() {
+    MyTheme {
+        MyApp()
+    }
+}
+```
 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
