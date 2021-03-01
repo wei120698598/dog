@@ -15,8 +15,6 @@
  */
 package com.planb.dog
 
-import com.example.dog.R
-
 val Dogs = arrayListOf(
     Dog(
         "Cookie",
