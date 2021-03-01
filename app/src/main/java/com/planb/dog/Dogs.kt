@@ -1,3 +1,18 @@
+/*
+ * Copyright 2021 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     https://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package com.planb.dog
 
 import com.example.dog.R
@@ -9,10 +24,17 @@ val Dogs = arrayListOf(
         age = 1,
         sex = true,
         breed = "金毛",
-        story = "2010年8月18，深圳，金毛犬贝贝按主人要求，叼着自己的三个孩子去卖。贝贝特别懂事，主人去买菜，它蹲在旁边等，等菜放在篮子里，它就帮主人叼回家，还会在下雨时帮主人叼伞，会把垃圾摆在门口，只要主人一声招呼，就把它们叼到垃圾筒里。 贝贝知道要去卖孩子，这不是第一次了。路上，3只毛茸茸的金毛宝宝在篮子里打瞌睡，能叼27斤的贝贝几次停下来，在狗市，面对讨价还价的人，贝贝知道又要和孩子分离了。"
+        story = "2010年8月18，深圳，金毛犬贝贝按主人要求，叼着自己的三个孩子去卖。贝贝特别懂事，主人去买菜，" +
+            "它蹲在旁边等，" +
+            "等菜放在篮子里，它就帮主人叼回家，还会在下雨时帮主人叼伞，会把垃圾摆在门口，只要主人一声招呼，" +
+            "就把它们叼到垃圾筒里。" +
+            " 贝贝知道要去卖孩子，这不是第一次了。路上，3只毛茸茸的金毛宝宝在篮子里打瞌睡，" +
+            "能叼27斤的贝贝几次停下来，在狗市，面对讨价还价的人，" +
+            "贝贝知道又要和孩子分离了。"
     ),
     Dog(
-        "Coopet", R.drawable.image_2,
+        "Coopet",
+        R.drawable.image_2,
         age = 2,
         sex = false,
         breed = "大麦町犬",
@@ -23,7 +45,8 @@ val Dogs = arrayListOf(
             "他像箭一样“嗖”地奔到主人房前。敲响门，打搅了主人的美梦。主人责骂了欢欢。欢欢回去躺下，刚打起盹，又听见主人叫他。他警觉地坐起来，竖起耳朵听，又没声音了。欢欢放心的睡着了，他正做着美梦，忽然有人揪着他的耳朵叫：“快起来，主人叫你!”欢欢又冲进主人房里，叫醒了主人。“怎么又是你!”主人气得把欢欢赶出屋外清晨，森林睡醒了，粉红的、鹅黄的、紫色的花醒来了。妙妙对欢欢说：“对不起，我们和好吧。”欢欢说：“是我不好，请原谅我吧"
     ),
     Dog(
-        "Coco", R.drawable.image_4,
+        "Coco",
+        R.drawable.image_4,
         age = 3,
         sex = true,
         breed = "比利时牧羊犬",
@@ -72,7 +95,8 @@ val Dogs = arrayListOf(
             "有朋友的星期天才是最最快乐的哦！"
     ),
     Dog(
-        "Angela", R.drawable.image_5,
+        "Angela",
+        R.drawable.image_5,
         age = 4,
         sex = false,
         breed = "巴吉度犬",
@@ -106,7 +130,8 @@ val Dogs = arrayListOf(
             "后来，奶奶编织了一件黑花点的花衣送给哈利，哈利非常喜欢这件毛衣，又暖和又漂亮，穿起来的感觉就像睡在窝里的小鸟一样呢。"
     ),
     Dog(
-        "Cassiel", R.drawable.image_7,
+        "Cassiel",
+        R.drawable.image_7,
         age = 3,
         sex = false,
         breed = "金毛",
@@ -193,56 +218,64 @@ val Dogs = arrayListOf(
             "当然，没有鼻子，他绝不肯去划船，所以那小伙子只好坐下来，耐心等候。"
     ),
     Dog(
-        "Louis", R.drawable.image_8,
+        "Louis",
+        R.drawable.image_8,
         age = 2,
         sex = true,
         breed = "阿拉斯加雪橇犬",
         story = "2010年8月18，深圳，金毛犬贝贝按主人要求，叼着自己的三个孩子去卖。贝贝特别懂事，主人去买菜，它蹲在旁边等，等菜放在篮子里，它就帮主人叼回家，还会在下雨时帮主人叼伞，会把垃圾摆在门口，只要主人一声招呼，就把它们叼到垃圾筒里。 贝贝知道要去卖孩子，这不是第一次了。路上，3只毛茸茸的金毛宝宝在篮子里打瞌睡，能叼27斤的贝贝几次停下来，在狗市，面对讨价还价的人，贝贝知道又要和孩子分离了。"
     ),
     Dog(
-        "Tina", R.drawable.image_9,
+        "Tina",
+        R.drawable.image_9,
         age = 4,
         sex = false,
         breed = "伯恩山犬",
         story = "2010年8月18，深圳，金毛犬贝贝按主人要求，叼着自己的三个孩子去卖。贝贝特别懂事，主人去买菜，它蹲在旁边等，等菜放在篮子里，它就帮主人叼回家，还会在下雨时帮主人叼伞，会把垃圾摆在门口，只要主人一声招呼，就把它们叼到垃圾筒里。 贝贝知道要去卖孩子，这不是第一次了。路上，3只毛茸茸的金毛宝宝在篮子里打瞌睡，能叼27斤的贝贝几次停下来，在狗市，面对讨价还价的人，贝贝知道又要和孩子分离了。"
     ),
     Dog(
-        "Candy", R.drawable.image_10,
+        "Candy",
+        R.drawable.image_10,
         age = 0,
         sex = true,
         breed = "金毛",
         story = "2010年8月18，深圳，金毛犬贝贝按主人要求，叼着自己的三个孩子去卖。贝贝特别懂事，主人去买菜，它蹲在旁边等，等菜放在篮子里，它就帮主人叼回家，还会在下雨时帮主人叼伞，会把垃圾摆在门口，只要主人一声招呼，就把它们叼到垃圾筒里。 贝贝知道要去卖孩子，这不是第一次了。路上，3只毛茸茸的金毛宝宝在篮子里打瞌睡，能叼27斤的贝贝几次停下来，在狗市，面对讨价还价的人，贝贝知道又要和孩子分离了。"
     ),
     Dog(
-        "An", R.drawable.image_11,
+        "An",
+        R.drawable.image_11,
         age = 3,
         sex = true,
         breed = "金毛",
         story = "2010年8月18，深圳，金毛犬贝贝按主人要求，叼着自己的三个孩子去卖。贝贝特别懂事，主人去买菜，它蹲在旁边等，等菜放在篮子里，它就帮主人叼回家，还会在下雨时帮主人叼伞，会把垃圾摆在门口，只要主人一声招呼，就把它们叼到垃圾筒里。 贝贝知道要去卖孩子，这不是第一次了。路上，3只毛茸茸的金毛宝宝在篮子里打瞌睡，能叼27斤的贝贝几次停下来，在狗市，面对讨价还价的人，贝贝知道又要和孩子分离了。"
     ),
     Dog(
-        "Ice", R.drawable.image_13,
+        "Ice",
+        R.drawable.image_13,
         age = 2,
         sex = true,
         breed = "爱尔兰猎狼犬",
         story = "2010年8月18，深圳，金毛犬贝贝按主人要求，叼着自己的三个孩子去卖。贝贝特别懂事，主人去买菜，它蹲在旁边等，等菜放在篮子里，它就帮主人叼回家，还会在下雨时帮主人叼伞，会把垃圾摆在门口，只要主人一声招呼，就把它们叼到垃圾筒里。 贝贝知道要去卖孩子，这不是第一次了。路上，3只毛茸茸的金毛宝宝在篮子里打瞌睡，能叼27斤的贝贝几次停下来，在狗市，面对讨价还价的人，贝贝知道又要和孩子分离了。"
     ),
     Dog(
-        "make", R.drawable.image_14,
+        "make",
+        R.drawable.image_14,
         age = 6,
         sex = true,
         breed = "博美犬",
         story = "2010年8月18，深圳，金毛犬贝贝按主人要求，叼着自己的三个孩子去卖。贝贝特别懂事，主人去买菜，它蹲在旁边等，等菜放在篮子里，它就帮主人叼回家，还会在下雨时帮主人叼伞，会把垃圾摆在门口，只要主人一声招呼，就把它们叼到垃圾筒里。 贝贝知道要去卖孩子，这不是第一次了。路上，3只毛茸茸的金毛宝宝在篮子里打瞌睡，能叼27斤的贝贝几次停下来，在狗市，面对讨价还价的人，贝贝知道又要和孩子分离了。"
     ),
     Dog(
-        "Lucky", R.drawable.image_15,
+        "Lucky",
+        R.drawable.image_15,
         age = 4,
         sex = true,
         breed = "藏獒",
         story = "2010年8月18，深圳，金毛犬贝贝按主人要求，叼着自己的三个孩子去卖。贝贝特别懂事，主人去买菜，它蹲在旁边等，等菜放在篮子里，它就帮主人叼回家，还会在下雨时帮主人叼伞，会把垃圾摆在门口，只要主人一声招呼，就把它们叼到垃圾筒里。 贝贝知道要去卖孩子，这不是第一次了。路上，3只毛茸茸的金毛宝宝在篮子里打瞌睡，能叼27斤的贝贝几次停下来，在狗市，面对讨价还价的人，贝贝知道又要和孩子分离了。"
     ),
     Dog(
-        "James", R.drawable.image_16,
+        "James",
+        R.drawable.image_16,
         age = 1,
         sex = false,
         breed = "秋田",
@@ -253,14 +286,16 @@ val Dogs = arrayListOf(
             "著作权归分享者所有。"
     ),
     Dog(
-        "Noble", R.drawable.image_17,
+        "Noble",
+        R.drawable.image_17,
         age = 2,
         sex = true,
         breed = "泰迪",
         story = "2010年8月18，深圳，金毛犬贝贝按主人要求，叼着自己的三个孩子去卖。贝贝特别懂事，主人去买菜，它蹲在旁边等，等菜放在篮子里，它就帮主人叼回家，还会在下雨时帮主人叼伞，会把垃圾摆在门口，只要主人一声招呼，就把它们叼到垃圾筒里。 贝贝知道要去卖孩子，这不是第一次了。路上，3只毛茸茸的金毛宝宝在篮子里打瞌睡，能叼27斤的贝贝几次停下来，在狗市，面对讨价还价的人，贝贝知道又要和孩子分离了。"
     ),
     Dog(
-        "Ellison", R.drawable.image_19,
+        "Ellison",
+        R.drawable.image_19,
         age = 4,
         sex = false,
         breed = "秋田",

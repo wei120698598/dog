@@ -60,61 +60,71 @@ fun Dog() {
     val dog = dogDetailActivity.intent.getSerializableExtra("dog") as Dog
     Surface(color = MaterialTheme.colors.surface) {
         Column(modifier = Modifier.fillMaxHeight()) {
-
-            Box(
-                contentAlignment = Alignment.BottomStart,
-            ) {
-                Image(
-                    painter = painterResource(id = dog.avatar),
-                    contentScale = ContentScale.FillWidth,
-                    contentDescription = "",
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .heightIn(max = 300.dp)
-                )
-                Column(modifier = Modifier.padding(15.dp)) {
-                    Text(dog.name, fontSize = 30.sp)
-                    Text("PlanBDog", fontSize = 15.sp)
-                }
-            }
+            Header(dog)
             LazyColumn(verticalArrangement = Arrangement.spacedBy(4.dp)) {
                 item {
-                    Card(
-                        elevation = 10.dp,
-                        modifier = Modifier
-                            .padding(start = 15.dp, end = 15.dp, top = 15.dp)
-                            .fillMaxWidth()
-                    ) {
-                        Text(
-                            "狗狗今年 ${dog.age} 岁了",
-                            fontSize = 15.sp,
-                            modifier = Modifier.padding(10.dp)
-                        )
-                    }
+                    Age(dog)
                 }
                 item {
-                    Card(
-                        elevation = 10.dp,
-                        modifier = Modifier
-                            .padding(start = 15.dp, end = 15.dp, top = 15.dp)
-                            .fillMaxWidth()
-                    ) {
-                        Text(
-                            "你的狗狗是个 '${if (dog.sex) "小公主" else "淘气鬼"}'",
-                            fontSize = 15.sp,
-                            modifier = Modifier.padding(10.dp)
-                        )
-                    }
-
+                    Sex(dog)
                 }
                 item {
-                    dog.story?.let {
-                        Card(elevation = 10.dp, modifier = Modifier.padding(15.dp)) {
-                            Text(it, fontSize = 15.sp, modifier = Modifier.padding(10.dp))
-                        }
-                    }
+                    Story(dog)
                 }
             }
+        }
+    }
+}
+
+@Composable
+private fun Story(dog: Dog) {
+    dog.story?.let {
+        Card(elevation = 10.dp, modifier = Modifier.padding(15.dp)) {
+            Text(it, fontSize = 15.sp, modifier = Modifier.padding(10.dp))
+        }
+    }
+}
+
+@Composable
+private fun Sex(dog: Dog) {
+    Card(
+        elevation = 10.dp,
+        modifier = Modifier
+            .padding(start = 15.dp, end = 15.dp, top = 15.dp)
+            .fillMaxWidth()
+    ) {
+        Text(
+            "你的狗狗是个 '${if (dog.sex) "小公主" else "淘气鬼"}'",
+            fontSize = 15.sp,
+            modifier = Modifier.padding(10.dp)
+        )
+    }
+}
+
+@Composable
+private fun Age(dog: Dog) {
+    Card(
+        elevation = 10.dp,
+        modifier = Modifier.padding(start = 15.dp, end = 15.dp, top = 15.dp).fillMaxWidth()
+    ) {
+        Text("狗狗今年 ${dog.age} 岁了", fontSize = 15.sp, modifier = Modifier.padding(10.dp))
+    }
+}
+
+@Composable
+private fun Header(dog: Dog) {
+    Box(contentAlignment = Alignment.BottomStart) {
+        Image(
+            painter = painterResource(id = dog.avatar),
+            contentScale = ContentScale.FillWidth,
+            contentDescription = "",
+            modifier = Modifier
+                .fillMaxWidth()
+                .heightIn(max = 300.dp)
+        )
+        Column(modifier = Modifier.padding(15.dp)) {
+            Text(dog.name, fontSize = 30.sp)
+            Text("PlanBDog", fontSize = 15.sp)
         }
     }
 }

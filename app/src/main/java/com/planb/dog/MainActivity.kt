@@ -66,7 +66,6 @@ class MainActivity : AppCompatActivity() {
     }
 }
 
-
 // Start building your app here!
 @ExperimentalFoundationApi
 @Composable
